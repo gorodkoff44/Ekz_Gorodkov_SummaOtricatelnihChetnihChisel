@@ -31,7 +31,7 @@ namespace Ekz_Gorodkov_SummaOtricatelnihChetnihChisel
             int c = rnd.Next(-100, 100); //первое случайное число диапазона -100 до 100
             //и два счетчика
             int z = 0;
-            int zz = 0;
+            int k = 0;
             Console.WriteLine("Исходный массив:");
             Console.WriteLine();
             //заполнение и вывод в консоль основного массива
@@ -64,17 +64,17 @@ namespace Ekz_Gorodkov_SummaOtricatelnihChetnihChisel
             {
                 if ((otr[i] % 2) == 0)
                 {
-                    chetn[zz] = otr[i];
-                    zz++; //Счетчик кол-ва элементов массива chetn
+                    chetn[k] = otr[i];
+                    k++; //Счетчик кол-ва элементов массива chetn
                 }
             }
 
-            for (int i = 0; i < zz; i++) //вывод массива с четными отрицательными числами
+            for (int i = 0; i < k; i++) //вывод массива с четными отрицательными числами
             {
                 Console.Write($"{chetn[i]} ");
             }
             Console.WriteLine();
-            for (int i = 0; i < zz; i++) //перебор массива четных отрицательных чисел
+            for (int i = 0; i < k; i++) //перебор массива четных отрицательных чисел
             {
                 sum = sum + chetn[i]; //сумма элементов массива
             }
